@@ -21,3 +21,5 @@
   - [ ] 测试 format
   - [ ] 测试 lint
 - [ ] 画新 LOGO
+- [ ] 为 vitepress 构建 rss 方案
+- [ ] 讨论后考虑是否要购置新域名
