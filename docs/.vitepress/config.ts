@@ -199,6 +199,6 @@ export default defineConfig({
       },
     ],
 
-    socialLinks: [{ icon: "github", link: "https://github.com/MHCGA" }],
+    socialLinks: [{ icon: "github", link: "https://github.com/MHCGA/blog" }],
   },
 });
