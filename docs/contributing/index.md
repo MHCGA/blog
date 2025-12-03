@@ -191,24 +191,5 @@ Commit 摘要不超过 50 个字符；若需更多说明，可在正文补充。
 ## 常见问题
 
 - **如何寻找审稿人？** 可在 PR 描述中 @ 常驻 reviewer，或在群聊/Issue 中请求分配。
-- **英文版本何时同步？** 中文稿合并后，可在 `docs/en/` 目录下创建翻译稿，并在 PR 中注明“英文同步状态”。
+- **其他语言版本何时同步？** 中文稿合并后，可在 `docs/en/` 等目录下创建翻译稿，并在 PR 中注明"翻译同步状态"。
 - **需要配图或附件吗？** 请将图片放在 `public/` 或与文章同级的 `images/` 目录，并在 Markdown 中使用相对路径。
-
-## 版权声明
-
-<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />
-除特别注明外，项目中除了代码部分均采用<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">Creative Commons BY-SA 4.0 知识共享署名 - 相同方式共享 4.0 国际许可协议</a>及附加的 [The Star And Thank Author License](https://github.com/zTrix/sata-license) 进行许可。
-
-换言之，使用过程中可以自由地共享、演绎，但必须署名、以相同方式共享、分享时不附加额外限制，并请记得为 GitHub 仓库点赞（Star）。
-
-如果你想引用本 GitHub 仓库，可以使用如下的 BibTeX：
-
-```bibtex
-@misc{halocmskb,
-  author    = {MHCGA},
-  title     = {Halo CMS Knowledge Base},
-  year      = {2025},
-  publisher = {GitHub},
-  howpublished = {\url{https://github.com/MHCGA/blog}},
-}
-```

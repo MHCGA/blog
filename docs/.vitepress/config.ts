@@ -13,31 +13,21 @@ const POST_GROUPS = ["plugins", "themes", "plugin-theme-synergy", "usage", "misc
 
 const ROOT_INFO_SIDEBAR: DefaultTheme.SidebarItem[] = [
   {
-    text: "投稿指南",
-    items: [{ text: "投稿须知", link: "/contributing/" }],
-  },
-  {
-    text: "关于此项目",
-    items: [{ text: "项目简介", link: "/about/" }],
-  },
-  {
-    text: "版权说明",
-    items: [{ text: "版权说明", link: "/license/" }],
+    items: [
+      { text: "投稿须知", link: "/contributing/" },
+      { text: "项目简介", link: "/about/" },
+      { text: "版权说明", link: "/license/" },
+    ],
   },
 ];
 
 const EN_INFO_SIDEBAR: DefaultTheme.SidebarItem[] = [
   {
-    text: "Contributing",
-    items: [{ text: "Submission Guide", link: "/en/contributing/" }],
-  },
-  {
-    text: "About this Project",
-    items: [{ text: "Overview", link: "/en/about/" }],
-  },
-  {
-    text: "License",
-    items: [{ text: "License Overview", link: "/en/license/" }],
+    items: [
+      { text: "Submission Guide", link: "/en/contributing/" },
+      { text: "Overview", link: "/en/about/" },
+      { text: "License Overview", link: "/en/license/" },
+    ],
   },
 ];
 

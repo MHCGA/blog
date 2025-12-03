@@ -15,7 +15,7 @@ Halo CMS 社区在插件、主题、运营、扩展生态上积累了大量一�
 - 站点运营、内容工作流、自动化部署方案
 - 扩展生态协同（插件 × 主题）、社区案例、工具链指南
 
-你可以直接访问：[https://howiehz.top/mhcga](https://howiehz.top/mhcga)。
+你可以直接访问：[官网](https://howiehz.top/mhcga)。
 
 ## 订阅 RSS
 
@@ -27,25 +27,17 @@ Halo CMS 社区在插件、主题、运营、扩展生态上积累了大量一�
 
 使用你常用的 RSS 阅读器订阅即可。
 
-## 文档结构概览
-
-完整目录、投稿区块与英文内容会同步发布在站点首页（`/posts/`）与 [投稿指南](docs/contributing/index.md)。
-
 ## 本地预览与部署
 
-所有本地开发、构建、部署命令集中记录在 [投稿指南 · 快速上手](docs/contributing/index.md#快速上手) 小节。请直接参考文档以免 README 与站点指引出现分歧。
+所有本地开发、构建、部署命令集中记录在[贡献指南](https://howiehz.top/mhcga/contributing/)中。
 
-## 参与方式
+## 进行贡献
 
-贡献方式（投稿、审稿、Issue 申领、自动化维护等）均在 [投稿指南](docs/contributing/index.md) 详述。
-
-## 常见问题
-
-FAQ、Frontmatter 规则与翻译流程同样集中在 [投稿指南](docs/contributing/index.md)。遇到仓库之外的问题，可直接在 Issues 中提问。
+贡献方式在[贡献指南](https://howiehz.top/mhcga/contributing/)详述。
 
 ## 版权声明
 
-代码沿用 [MIT License](LICENSE)，文稿遵循 CC BY-SA 4.0 + SATA 组合条款；更细化的使用说明与引用格式请阅读 [docs/license/index.md](docs/license/index.md)。
+代码沿用 [MIT License](LICENSE)，文稿遵循 CC BY-SA 4.0 + SATA 组合条款；更细化的使用说明与引用格式请阅读[版权说明](https://howiehz.top/mhcga/license/)。
 
 ## 鸣谢
 
