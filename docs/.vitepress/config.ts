@@ -310,7 +310,6 @@ export default defineConfig({
       themeConfig: {
         socialLinks: [{ icon: "github", link: githubRepoUrl }],
         nav: [
-          { text: "首页", link: "/" },
           {
             text: "文章分类",
             items: [
@@ -321,7 +320,13 @@ export default defineConfig({
               { text: "其他", link: "/posts/misc/" },
             ],
           },
-          { text: "投稿指南", link: "/contributing/" },
+          {
+            text: "关于",
+            items: [
+              { text: "投稿须知", link: "/contributing/" },
+              { text: "项目简介", link: "/about/" },
+            ],
+          },
         ],
         sidebar: {
           "/posts/": buildPostSidebar("root"),
@@ -330,7 +335,7 @@ export default defineConfig({
           "/contributing/": ROOT_INFO_SIDEBAR,
         },
         footer: {
-          message: '代码 MIT · 文稿 CC BY-SA 4.0 + SATA · <a href="/license/">版权说明</a>',
+          message: `代码 MIT · 文稿 CC BY-SA 4.0 + SATA · <a href="${basePath}license/">版权说明</a>`,
           copyright: "版权所有 © 2025-至今 MHCGA",
         },
 
@@ -384,7 +389,6 @@ export default defineConfig({
       themeConfig: {
         socialLinks: [{ icon: "github", link: githubRepoUrl }],
         nav: [
-          { text: "Home", link: "/en/" },
           {
             text: "Categories",
             items: [
@@ -395,7 +399,13 @@ export default defineConfig({
               { text: "Miscellaneous", link: "/en/posts/misc/" },
             ],
           },
-          { text: "Contributing", link: "/en/contributing/" },
+          {
+            text: "About",
+            items: [
+              { text: "Submission Guide", link: "/en/contributing/" },
+              { text: "Overview", link: "/en/about/" },
+            ],
+          },
         ],
         sidebar: {
           "/en/posts/": buildPostSidebar("en"),
@@ -404,7 +414,7 @@ export default defineConfig({
           "/en/contributing/": EN_INFO_SIDEBAR,
         },
         footer: {
-          message: 'Code MIT · Content CC BY-SA 4.0 + SATA · <a href="/en/license/">License details</a>',
+          message: `Code MIT · Content CC BY-SA 4.0 + SATA · <a href="${basePath}en/license/">License details</a>`,
           copyright: "Copyright © 2025-present MHCGA",
         },
         editLink: {

@@ -17,6 +17,16 @@ Halo CMS 社区在插件、主题、运营、扩展生态上积累了大量一�
 
 你可以直接访问：[https://howiehz.top/mhcga](https://howiehz.top/mhcga)。
 
+## 订阅 RSS
+
+站点提供了以下 RSS 源，便于你实时获取最新内容：
+
+- **综合源**：[rss.xml](https://howiehz.top/mhcga/rss.xml)
+- **简体中文**：[rss.zh-hans.xml](https://howiehz.top/mhcga/rss.zh-hans.xml)
+- **英文**：[rss.en.xml](https://howiehz.top/mhcga/rss.en.xml)
+
+使用你常用的 RSS 阅读器订阅即可。
+
 ## 文档结构概览
 
 完整目录、投稿区块与英文内容会同步发布在站点首页（`/posts/`）与 [投稿指南](docs/contributing/index.md)。

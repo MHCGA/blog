@@ -9,8 +9,6 @@
 
 > If any discrepancies arise, treat the Simplified Chinese originals as the source of truth.
 
----
-
 ## About the Site
 
 Halo CMS builders share tons of scattered knowledge about plugins, themes, operations, and cross-ecosystem tooling. This repository aims to centralize that know-how in a bilingual (ZH/EN) knowledge base covering:
@@ -21,37 +19,35 @@ Halo CMS builders share tons of scattered knowledge about plugins, themes, opera
 
 Visit the production site at [https://howiehz.top/mhcga](https://howiehz.top/mhcga).
 
----
+## Subscribe via RSS
+
+The site provides RSS feeds for convenient content updates:
+
+- **All Content**：[rss.xml](https://howiehz.top/mhcga/rss.xml)
+- **Simplified Chinese**：[rss.zh-hans.xml](https://howiehz.top/mhcga/rss.zh-hans.xml)
+- **English**：[rss.en.xml](https://howiehz.top/mhcga/rss.en.xml)
+
+Subscribe using your favorite RSS reader.
 
 ## Documentation Map
 
 The full navigation, bilingual content, and submission workflow live on the site itself (`/en/posts/`) and inside the [contribution guide](docs/en/contributing/index.md). This README stays minimal to avoid maintaining duplicate copies of the same structure.
 
----
-
 ## Local Development & Preview
 
 All setup commands (install, dev, build, preview, lint/format, deploy) are documented once in [Contribution Guide · Quick Start](docs/en/contributing/index.md#quick-start). Please refer there to keep instructions synchronized with the docs site.
-
----
 
 ## How to Contribute
 
 Submission paths (articles, issues, reviews, automation work) are fully documented in [docs/en/contributing/index.md](docs/en/contributing/index.md). Follow that single source for frontmatter rules, reviewer expectations, and automation notes.
 
----
-
 ## FAQ
 
 The FAQ, translation policy, and environment assumptions are centralized in the [contribution guide](docs/en/contributing/index.md). For anything else, open an issue and we’ll help out.
 
----
-
 ## License
 
 Code remains under [MIT License](LICENSE); documentation falls under CC BY-SA 4.0 + SATA. For detailed obligations, scenarios, and citation guidance, see [docs/en/license/index.md](docs/en/license/index.md).
-
----
 
 ## Acknowledgements
 
