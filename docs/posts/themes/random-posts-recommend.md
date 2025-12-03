@@ -72,7 +72,7 @@ spec:
                 size: n,
                 sort: {'spec.publishTime,desc', 'metadata.creationTimestamp,asc'}
               })},
-              targetPagePostList=${targetPagePostFinderResult.items},"
+              targetPagePostList=${targetPagePostFinderResult.items}"
   >
     <th:block th:each="iterPost: ${targetPagePostList}">
       <div th:if="${post.metadata.name != iterPost.metadata.name}">
