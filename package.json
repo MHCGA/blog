@@ -1,0 +1,71 @@
+{
+  "private": true,
+  "type": "module",
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "Share tips related to Halo CMS.",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "lint": "pnpm run \"/^lint:.*/\"",
+    "lint:eslint": "oxlint --type-aware --fix && eslint --fix",
+    "lint:style": "stylelint --fix \"./docs/.vitepress/**/*.{css,vue}\"",
+    "lint:md": "markdownlint \"**/*.md\" --fix",
+    "lint:autocorrect": "autocorrect --fix",
+    "format": "pnpm run \"/^format:.*/\"",
+    "format:prettier": "prettier --write \"*.{js,ts,json,yaml,md,jsonc}\" \"./docs/**/*.{ts,md,vue,json,css}\"",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "pnpm run docs:build && vitepress preview docs"
+  },
+  "browserslist": [
+    "defaults",
+    "Safari >= 16.4",
+    "Chrome >= 111",
+    "Firefox >= 128"
+  ],
+  "keywords": [
+    "halo"
+  ],
+  "author": "MHCGA",
+  "homepage": "https://github.com/MHCGA",
+  "repository": {
+    "url": "https://github.com/MHCGA/blog",
+    "type": "git"
+  },
+  "packageManager": "pnpm@10.11.0",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/compat": "^2.0.0",
+    "@eslint/js": "^9.39.1",
+    "@ianvs/prettier-plugin-sort-imports": "^4.7.0",
+    "@typescript-eslint/parser": "^8.48.0",
+    "autocorrect-node": "^2.14.0",
+    "browserslist": "^4.28.0",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import-x": "^4.16.1",
+    "eslint-plugin-oxlint": "^1.30.0",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-vue": "^10.6.2",
+    "globals": "^16.5.0",
+    "lightningcss": "^1.30.2",
+    "markdownlint-cli": "^0.46.0",
+    "oxlint": "^1.30.0",
+    "oxlint-tsgolint": "^0.8.3",
+    "pagefind": "^1.4.0",
+    "prettier": "^3.7.2",
+    "prettier-plugin-tailwindcss": "^0.7.1",
+    "stylelint": "^16.26.1",
+    "stylelint-config-html": "^1.1.0",
+    "stylelint-config-recommended-vue": "^1.6.1",
+    "stylelint-config-standard": "^39.0.1",
+    "stylelint-order": "^7.0.0",
+    "typescript-eslint": "^8.48.0",
+    "vitepress": "2.0.0-alpha.15",
+    "vitepress-plugin-pagefind": "^0.4.16",
+    "vitepress-plugin-rss": "^0.3.4",
+    "vue": "^3.5.25",
+    "vue-eslint-parser": "^10.2.0"
+  }
+}
