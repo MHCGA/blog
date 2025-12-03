@@ -108,7 +108,7 @@ references:
 ## 拓展
 
 在上面模板代码中 `allPostList[randomIndex]` 返回的是 [ListedPostVo](https://docs.halo.run/developer-guide/theme/finder-apis/post#listedpostvo) 类型的变量。  
-因此你可以拿到文章更多相关信息，如：标题，创建时间，发布时间，是否置顶，摘要内容等。  
+因此你可以拿到文章更多相关信息，如：标题，创建时间，发布时间，是否置顶，摘要内容等。
 
 将超链接的文字替换为目标文章标题：
 
