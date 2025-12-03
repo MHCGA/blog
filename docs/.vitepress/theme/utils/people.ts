@@ -56,11 +56,11 @@ function buildLink(url?: string, email?: string): string | undefined {
   if (email && email !== "") {
     const hasProtocol = email.includes("://");
     const looksLikeEmail = email.includes("@") && !hasProtocol && !email.startsWith("mailto:");
-    
+
     if (looksLikeEmail) {
       return `mailto:${email}`;
     }
-    
+
     return email;
   }
 

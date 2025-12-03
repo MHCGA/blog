@@ -1,7 +1,7 @@
 ---
 authors:
   - name: 秦楠
-    url: ''
+    url: ""
     email: nan.qin@example.com
 references:
   - name: 自动化脚本仓库

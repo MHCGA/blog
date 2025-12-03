@@ -1,7 +1,7 @@
 ---
 authors:
   - name: Shan Zhao
-    url: ''
+    url: ""
     email: shan.zhao@example.com
 references:
   - name: Reference article

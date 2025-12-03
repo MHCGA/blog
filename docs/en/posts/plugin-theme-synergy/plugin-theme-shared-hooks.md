@@ -1,10 +1,10 @@
 ---
 authors:
   - name: Lin You
-    url: ''
+    url: ""
     email: lin.you@example.com
   - name: Wen He
-    url: ''
+    url: ""
     email: he.wen@example.com
 references:
   - name: Practice Guide

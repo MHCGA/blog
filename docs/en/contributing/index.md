@@ -66,9 +66,9 @@ We appreciate every contributor’s efforts. Let’s keep our knowledge base fri
 authors:
   - name: Contributor A
     url: https://github.com/contributor-a
-    email: ''
+    email: ""
   - name: Contributor B
-    url: ''
+    url: ""
     email: contributor-b@example.com
 references:
   - name: Reference name

@@ -1,7 +1,7 @@
 ---
 authors:
   - name: Leo Liu
-    url: ''
+    url: ""
     email: leo@example.com
 references:
   - name: Sample repository

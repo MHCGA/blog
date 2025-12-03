@@ -1,7 +1,7 @@
 ---
 authors:
   - name: 刘海
-    url: ''
+    url: ""
     email: liuhai@example.com
 references:
   - name: 示例仓库

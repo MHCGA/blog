@@ -1,10 +1,10 @@
 ---
 authors:
   - name: 林佑
-    url: ''
+    url: ""
     email: lin.you@example.com
   - name: 何雯
-    url: ''
+    url: ""
     email: he.wen@example.com
 references:
   - name: 实践指南

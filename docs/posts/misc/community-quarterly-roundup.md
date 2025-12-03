@@ -1,7 +1,7 @@
 ---
 authors:
   - name: 许扬
-    url: ''
+    url: ""
     email: yang.xu@example.com
 references:
   - name: 社区论坛帖

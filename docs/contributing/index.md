@@ -64,9 +64,9 @@ Issues 中的迭代计划与 Todo 标签聚合了大量待办工作，是了解�
 authors:
   - name: 投稿者 A
     url: https://github.com/contributor-a
-    email: ''
+    email: ""
   - name: 投稿者 B
-    url: ''
+    url: ""
     email: contributor-b@example.com
 references:
   - name: 参考资料名称

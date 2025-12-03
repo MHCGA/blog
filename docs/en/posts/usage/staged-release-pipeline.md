@@ -1,7 +1,7 @@
 ---
 authors:
   - name: Nan Qin
-    url: ''
+    url: ""
     email: nan.qin@example.com
 references:
   - name: Automation repository

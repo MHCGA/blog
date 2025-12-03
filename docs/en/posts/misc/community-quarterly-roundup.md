@@ -1,7 +1,7 @@
 ---
 authors:
   - name: Yang Xu
-    url: ''
+    url: ""
     email: yang.xu@example.com
 references:
   - name: Forum thread
