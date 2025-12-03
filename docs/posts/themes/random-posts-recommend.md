@@ -31,22 +31,22 @@ references:
 ```yaml [settings.yaml]
 spec:
   forms:
-	- group: post_styles
-	  label: 文章页样式
-	  formSchema:
-		- $formkit: checkbox
-		  name: is_post_recommended_articles_show
-		  label: 文章底部的推荐文章
-		  value: false
-		  help: 开启后将在文章底部显示推荐文章列表
-		- $formkit: number
-		  name: post_recommended_articles_count
-		  if: "$is_post_recommended_articles_show === true"
-		  label: 推荐文章数量
-		  value: 3
-		  min: 1
-		  max: 10
-		  help: 设置文章底部显示的推荐文章数量
+ - group: post_styles
+   label: 文章页样式
+   formSchema:
+  - $formkit: checkbox
+    name: is_post_recommended_articles_show
+    label: 文章底部的推荐文章
+    value: false
+    help: 开启后将在文章底部显示推荐文章列表
+  - $formkit: number
+    name: post_recommended_articles_count
+    if: "$is_post_recommended_articles_show === true"
+    label: 推荐文章数量
+    value: 3
+    min: 1
+    max: 10
+    help: 设置文章底部显示的推荐文章数量
 ```
 
 :::
@@ -76,13 +76,10 @@ spec:
   >
     <th:block th:each="iterPost: ${targetPagePostList}">
       <div th:if="${post.metadata.name != iterPost.metadata.name}">
-        <time
-          th:text="${#temporals.format(iterPost.spec?.publishTime, 'yyyy-MM-dd')}"
-        >文章发布时间替换位</time>
-        <a
-          th:href="@{${iterPost.status?.permalink}}" 
-          th:text="${iterPost.spec?.title}"
-        >文章超链接替换位（显示文字为标题/超链接为文章链接）</a>
+        <time th:text="${#temporals.format(iterPost.spec?.publishTime, 'yyyy-MM-dd')}">文章发布时间替换位</time>
+        <a th:href="@{${iterPost.status?.permalink}}" th:text="${iterPost.spec?.title}"
+          >文章超链接替换位（显示文字为标题/超链接为文章链接）</a
+        >
       </div>
     </th:block>
 
@@ -95,13 +92,10 @@ spec:
         <th:block th:each="index : ${#numbers.sequence(0,itemsNeeded-1)}">
           <th:block th:with="iterPost=${firstPagePostList[index]}">
             <div th:if="${post.metadata.name != iterPost.metadata.name}">
-              <time
-                th:text="${#temporals.format(iterPost.spec?.publishTime, 'yyyy-MM-dd')}"
-              >文章发布时间替换位</time>
-              <a
-                th:href="@{${iterPost.status?.permalink}}"
-                th:text="${iterPost.spec?.title}"
-              >文章超链接替换位（显示文字为标题/超链接为文章链接）</a>
+              <time th:text="${#temporals.format(iterPost.spec?.publishTime, 'yyyy-MM-dd')}">文章发布时间替换位</time>
+              <a th:href="@{${iterPost.status?.permalink}}" th:text="${iterPost.spec?.title}"
+                >文章超链接替换位（显示文字为标题/超链接为文章链接）</a
+              >
             </div>
           </th:block>
         </th:block>
@@ -125,7 +119,7 @@ spec:
               })},
               firstPagePostList=${postFinderResult.items}"
 >
-	<!-- ... -->
+  <!-- ... -->
 </th:block>
 ```
 
@@ -140,8 +134,8 @@ spec:
 
 ```html
 <th:block
-    th:if="${#lists.size(firstPagePostList) > 1}"
-    th:with="randomPageNumber=${T(java.lang.Math).floor(T(java.lang.Math).random()*(postFinderResult.totalPages)+1)},
+  th:if="${#lists.size(firstPagePostList) > 1}"
+  th:with="randomPageNumber=${T(java.lang.Math).floor(T(java.lang.Math).random()*(postFinderResult.totalPages)+1)},
               targetPagePostFinderResult=${postFinder.list({
                 page: randomPageNumber,
                 size: n,
@@ -149,7 +143,7 @@ spec:
               })},
               targetPagePostList=${targetPagePostFinderResult.items},"
 >
-  	<!-- ... -->
+  <!-- ... -->
 </th:block>
 ```
 
@@ -167,13 +161,10 @@ spec:
 ```html
 <th:block th:each="iterPost: ${targetPagePostList}">
   <div th:if="${post.metadata.name != iterPost.metadata.name}">
-	<time
-	  th:text="${#temporals.format(iterPost.spec?.publishTime, 'yyyy-MM-dd')}"
-    >文章发布时间替换位</time>
-	<a
-	  th:href="@{${iterPost.status?.permalink}}" 
-	  th:text="${iterPost.spec?.title}"
-    >文章超链接替换位（显示文字为标题/超链接为文章链接）</a>
+    <time th:text="${#temporals.format(iterPost.spec?.publishTime, 'yyyy-MM-dd')}">文章发布时间替换位</time>
+    <a th:href="@{${iterPost.status?.permalink}}" th:text="${iterPost.spec?.title}"
+      >文章超链接替换位（显示文字为标题/超链接为文章链接）</a
+    >
   </div>
 </th:block>
 ```
@@ -212,20 +203,17 @@ spec:
 
 ```html
 <th:block th:if="${itemsNeeded > 0}">
-	<th:block th:each="index : ${#numbers.sequence(0,itemsNeeded-1)}">
-	  <th:block th:with="iterPost=${firstPagePostList[index]}">
-		<div th:if="${post.metadata.name != iterPost.metadata.name}">
-		  <time
-			th:text="${#temporals.format(iterPost.spec?.publishTime, 'yyyy-MM-dd')}"
-          >文章发布时间替换位</time>
-		  <a
-			th:href="@{${iterPost.status?.permalink}}"
-			th:text="${iterPost.spec?.title}"
-          >文章超链接替换位（显示文字为标题/超链接为文章链接）</a>
-		</div>
-	  </th:block>
-	</th:block>
+  <th:block th:each="index : ${#numbers.sequence(0,itemsNeeded-1)}">
+    <th:block th:with="iterPost=${firstPagePostList[index]}">
+      <div th:if="${post.metadata.name != iterPost.metadata.name}">
+        <time th:text="${#temporals.format(iterPost.spec?.publishTime, 'yyyy-MM-dd')}">文章发布时间替换位</time>
+        <a th:href="@{${iterPost.status?.permalink}}" th:text="${iterPost.spec?.title}"
+          >文章超链接替换位（显示文字为标题/超链接为文章链接）</a
+        >
+      </div>
+    </th:block>
   </th:block>
+</th:block>
 ```
 
 如果 `itemsNeeded` 大于 0，才进行之后的补偿。
@@ -268,13 +256,10 @@ spec:
   >
     <th:block th:each="iterPost: ${targetPagePostList}">
       <div th:if="${post.metadata.name != iterPost.metadata.name}">
-        <time
-          th:text="${#temporals.format(iterPost.spec?.publishTime, 'yyyy-MM-dd')}"
-        >文章发布时间替换位</time>
-        <a
-          th:href="@{${iterPost.status?.permalink}}" 
-          th:text="${iterPost.spec?.title}"
-        >文章超链接替换位（显示文字为标题/超链接为文章链接）</a>
+        <time th:text="${#temporals.format(iterPost.spec?.publishTime, 'yyyy-MM-dd')}">文章发布时间替换位</time>
+        <a th:href="@{${iterPost.status?.permalink}}" th:text="${iterPost.spec?.title}"
+          >文章超链接替换位（显示文字为标题/超链接为文章链接）</a
+        >
       </div>
     </th:block>
 
@@ -287,13 +272,10 @@ spec:
         <th:block th:each="index : ${#numbers.sequence(0,itemsNeeded-1)}">
           <th:block th:with="iterPost=${firstPagePostList[index]}">
             <div th:if="${post.metadata.name != iterPost.metadata.name}">
-              <time
-                th:text="${#temporals.format(iterPost.spec?.publishTime, 'yyyy-MM-dd')}"
-              >文章发布时间替换位</time>
-              <a
-                th:href="@{${iterPost.status?.permalink}}" 
-                th:text="${iterPost.spec?.title}"
-              >文章超链接替换位（显示文字为标题/超链接为文章链接）</a>
+              <time th:text="${#temporals.format(iterPost.spec?.publishTime, 'yyyy-MM-dd')}">文章发布时间替换位</time>
+              <a th:href="@{${iterPost.status?.permalink}}" th:text="${iterPost.spec?.title}"
+                >文章超链接替换位（显示文字为标题/超链接为文章链接）</a
+              >
             </div>
           </th:block>
         </th:block>
@@ -320,7 +302,7 @@ spec:
             })},
             firstPagePostList=${postFinderResult.items}"
 >
-	<!-- ... -->
+  <!-- ... -->
 </th:block>
 ```
 
@@ -334,8 +316,8 @@ spec:
 
 ```html
 <th:block
-    th:if="${#lists.size(firstPagePostList) > 1}"
-    th:with="randomPageNumber=${T(java.lang.Math).floor(T(java.lang.Math).random()*(postFinderResult.totalPages)+1)},
+  th:if="${#lists.size(firstPagePostList) > 1}"
+  th:with="randomPageNumber=${T(java.lang.Math).floor(T(java.lang.Math).random()*(postFinderResult.totalPages)+1)},
               targetPagePostFinderResult=${postFinder.list({
                 page: randomPageNumber,
                 size: n,
@@ -343,8 +325,8 @@ spec:
                 sort: {'spec.publishTime,desc', 'metadata.creationTimestamp,asc'}
               })},
               targetPagePostList=${targetPagePostFinderResult.items},"
-  >
-  	<!-- ... -->
+>
+  <!-- ... -->
 </th:block>
 ```
 
