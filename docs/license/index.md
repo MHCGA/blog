@@ -31,7 +31,7 @@ Halo CMS 知识库的代码与文稿遵循不同的授权模式。请根据以�
 - **署名**：引用或转载时，请注明“Halo CMS 知识库（MHCGA）”以及原文链接。
 - **相同方式共享**：如对内容做出修改、翻译或二次创作，需继续以 CC BY-SA 4.0 提供。
 - **不得施加额外限制**：不得加入 DRM、付费墙或与 CC BY-SA 4.0 条款冲突的附加条件。
-- **SATA 额外要求**：在分享或使用内容前，请先为 [GitHub 仓库](https://github.com/MHCGA/blog) 点亮一颗 Star，以示感谢。
+- **SATA 额外要求**：在分享或使用内容前，请先为 [GitHub 仓库](https://github.com/MHCGA/halo-cms-docs) 点亮一颗 Star，以示感谢。
 
 ## 常见情境
 
@@ -50,7 +50,7 @@ Halo CMS 知识库的代码与文稿遵循不同的授权模式。请根据以�
   title     = {Halo CMS Knowledge Base},
   year      = {2025},
   publisher = {GitHub},
-  howpublished = {\url{https://github.com/MHCGA/blog}},
+  howpublished = {\url{https://github.com/MHCGA/halo-cms-docs}},
 }
 ```
 

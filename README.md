@@ -2,10 +2,10 @@
 
 **简体中文** ｜ [English](README.en.md)
 
-[![Docs Build](https://img.shields.io/github/actions/workflow/status/MHCGA/blog/build_and_deploy_doc.yml?branch=main&style=flat-square)](https://github.com/MHCGA/blog/actions/workflows/build_and_deploy_doc.yml)
-[![Node CI](https://img.shields.io/github/actions/workflow/status/MHCGA/blog/nodejs_ci.yml?branch=main&label=node%20ci&style=flat-square)](https://github.com/MHCGA/blog/actions/workflows/nodejs_ci.yml)
-[![GitHub Stars](https://img.shields.io/github/stars/MHCGA/blog.svg?style=social&label=Star)](https://github.com/MHCGA/blog)
-[![GitHub Watchers](https://img.shields.io/github/watchers/MHCGA/blog.svg?style=social&label=Watch)](https://github.com/MHCGA/blog)
+[![Docs Build](https://img.shields.io/github/actions/workflow/status/MHCGA/halo-cms-docs/build_and_deploy_doc.yml?branch=main&style=flat-square)](https://github.com/MHCGA/halo-cms-docs/actions/workflows/build_and_deploy_doc.yml)
+[![Node CI](https://img.shields.io/github/actions/workflow/status/MHCGA/halo-cms-docs/nodejs_ci.yml?branch=main&label=node%20ci&style=flat-square)](https://github.com/MHCGA/halo-cms-docs/actions/workflows/nodejs_ci.yml)
+[![GitHub Stars](https://img.shields.io/github/stars/MHCGA/halo-cms-docs.svg?style=social&label=Star)](https://github.com/MHCGA/halo-cms-docs)
+[![GitHub Watchers](https://img.shields.io/github/watchers/MHCGA/halo-cms-docs.svg?style=social&label=Watch)](https://github.com/MHCGA/halo-cms-docs)
 
 ## 关于此项目
 
@@ -44,6 +44,6 @@ Halo CMS 知识库持续收录以下内容：
 
 ## 鸣谢
 
-- 感谢所有[贡献者](https://github.com/MHCGA/blog/graphs/contributors)在内容、脚本、审稿上的投入。
+- 感谢所有[贡献者](https://github.com/MHCGA/halo-cms-docs/graphs/contributors)在内容、脚本、审稿上的投入。
 
 期待你也成为下一位贡献者，和我们一起让知识库更好用！

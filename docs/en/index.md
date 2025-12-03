@@ -49,5 +49,5 @@ features:
 
 socialLinks:
   - icon: github
-    link: https://github.com/MHCGA/blog
+    link: https://github.com/MHCGA/halo-cms-docs
 ---

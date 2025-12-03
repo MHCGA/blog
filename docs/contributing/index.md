@@ -15,7 +15,7 @@ references:
 
 ::: tip 快速投稿
 
-可以直接发原文链接在 [issue](https://github.com/MHCGA/blog/issues/new) 投稿，然后项目志愿者会帮忙加入知识库。
+可以直接发原文链接在 [issue](https://github.com/MHCGA/halo-cms-docs/issues/new) 投稿，然后项目志愿者会帮忙加入知识库。
 
 :::
 
@@ -24,13 +24,13 @@ references:
 在动手编辑前，请先阅读下列资料，便于与社区保持一致：
 
 - [项目简介与站点方针](/about/)
-- [仓库 README](https://github.com/MHCGA/blog/blob/main/README.md)
+- [仓库 README](https://github.com/MHCGA/halo-cms-docs/blob/main/README.md)
 - 本页下方的章节
 
 ## 参与协作
 
 ::: warning 温馨提示
-开始编写前，请先浏览 [Issues 列表](https://github.com/MHCGA/blog/issues)，确认没有人正在处理同一主题；若确认空闲，请开一个新议题记录计划和范围，便于协作。
+开始编写前，请先浏览 [Issues 列表](https://github.com/MHCGA/halo-cms-docs/issues)，确认没有人正在处理同一主题；若确认空闲，请开一个新议题记录计划和范围，便于协作。
 :::
 
 ::: tip 小建议
@@ -57,11 +57,11 @@ Issues 中的迭代计划与 Todo 标签聚合了大量待办工作，是了解�
 
 ## 分类范围
 
-1. [插件开发技巧](/posts/plugins/) · [docs/posts/plugins/](https://github.com/MHCGA/blog/tree/main/docs/posts/plugins)
-2. [主题开发技巧](/posts/themes/) · [docs/posts/themes/](https://github.com/MHCGA/blog/tree/main/docs/posts/themes)
-3. [插件与主题协同技巧](/posts/plugin-theme-synergy/) · [docs/posts/plugin-theme-synergy/](https://github.com/MHCGA/blog/tree/main/docs/posts/plugin-theme-synergy)
-4. [使用技巧](/posts/usage/) · [docs/posts/usage/](https://github.com/MHCGA/blog/tree/main/docs/posts/usage)
-5. [其他实践](/posts/misc/) · [docs/posts/misc/](https://github.com/MHCGA/blog/tree/main/docs/posts/misc)
+1. [插件开发技巧](/posts/plugins/) · [docs/posts/plugins/](https://github.com/MHCGA/halo-cms-docs/tree/main/docs/posts/plugins)
+2. [主题开发技巧](/posts/themes/) · [docs/posts/themes/](https://github.com/MHCGA/halo-cms-docs/tree/main/docs/posts/themes)
+3. [插件与主题协同技巧](/posts/plugin-theme-synergy/) · [docs/posts/plugin-theme-synergy/](https://github.com/MHCGA/halo-cms-docs/tree/main/docs/posts/plugin-theme-synergy)
+4. [使用技巧](/posts/usage/) · [docs/posts/usage/](https://github.com/MHCGA/halo-cms-docs/tree/main/docs/posts/usage)
+5. [其他实践](/posts/misc/) · [docs/posts/misc/](https://github.com/MHCGA/halo-cms-docs/tree/main/docs/posts/misc)
 
 > 新文章请直接放入对应目录下的 Markdown 文件：中文稿位于 `docs/posts/<分类>/`，若同步英文版本，请在 `docs/en/posts/<分类>/` 中使用相同文件名创建译文。
 
@@ -112,14 +112,14 @@ references:
 
 ### 编辑多个页面
 
-1. 打开 [MHCGA/blog](https://github.com/MHCGA/blog) 仓库，按下 <kbd>.</kbd>（或把 `github.com` 改为 `github.dev`）进入网页版 VS Code。
+1. 打开 [MHCGA/halo-cms-docs](https://github.com/MHCGA/halo-cms-docs) 仓库，按下 <kbd>.</kbd>（或把 `github.com` 改为 `github.dev`）进入网页版 VS Code。
 2. 在编辑器中修改多个文件，可使用右上角预览按钮（或 <kbd>Ctrl</kbd> + <kbd>K</kbd>、<kbd>V</kbd>）查看渲染效果。
 3. 修改完成后使用左侧 **Source Control**，按 commit 规范填写信息并提交。若提示创建分支，点击绿色 **Fork Repository** 按钮即可。
 4. 提交后顶部会弹出提示框，依次填写 PR 标题、目标分支，确认后即可生成 PR。
 
 ### 向 PR 追加更改
 
-1. 打开 [Pull Request 列表](https://github.com/MHCGA/blog/pulls)，进入你提交的 PR。
+1. 打开 [Pull Request 列表](https://github.com/MHCGA/halo-cms-docs/pulls)，进入你提交的 PR。
 2. PR 标题下方会显示 `<你的 GitHub ID> wants to merge ... from <你的分支名>`，点击分支名即可跳转到个人 Fork。
 3. 根据需求继续编辑：
    - 少量文件：在 GitHub 网页端直接修改并 Commit。
@@ -134,8 +134,8 @@ references:
 
 大致步骤：
 
-1. Fork `MHCGA/blog` 至个人账号。
-2. 将 Fork 仓库克隆到本地：`git clone git@github.com:<you>/blog.git`。
+1. Fork `MHCGA/halo-cms-docs` 至个人账号。
+2. 将 Fork 仓库克隆到本地：`git clone git@github.com:<you>/halo-cms-docs.git`。
 3. 创建分支并完成修改，按规范填写 commit。
 4. `git push` 至个人 Fork，然后在 GitHub 上创建 PR。
 5. 需要追加改动时，在本地继续提交并推送即可。

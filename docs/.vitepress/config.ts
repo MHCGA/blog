@@ -6,7 +6,7 @@ import { RSSOptions, RssPlugin } from "vitepress-plugin-rss";
 
 const baseUrl = "https://howiehz.top";
 const basePath = "/mhcga/";
-const githubRepoUrl = "https://github.com/MHCGA/blog";
+const githubRepoUrl = "https://github.com/MHCGA/halo-cms-docs";
 
 const DOCS_ROOT = path.resolve(__dirname, "..");
 const POST_GROUPS = ["plugins", "themes", "plugin-theme-synergy", "usage", "misc"] as const;

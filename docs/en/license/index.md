@@ -31,7 +31,7 @@ This implies the following obligations:
 - **Attribution**: credit “Halo CMS Knowledge Base (MHCGA)” and link back to the source when reusing content.
 - **ShareAlike**: if you adapt, translate, or remix the work, you must distribute it under CC BY-SA 4.0 as well.
 - **No extra restrictions**: do not add DRM, paywalls, or terms that conflict with CC BY-SA 4.0.
-- **SATA requirement**: star the [GitHub repository](https://github.com/MHCGA/blog) before sharing or incorporating the content.
+- **SATA requirement**: star the [GitHub repository](https://github.com/MHCGA/halo-cms-docs) before sharing or incorporating the content.
 
 ## Typical Scenarios
 
@@ -50,7 +50,7 @@ This implies the following obligations:
   title     = {Halo CMS Knowledge Base},
   year      = {2025},
   publisher = {GitHub},
-  howpublished = {\url{https://github.com/MHCGA/blog}},
+  howpublished = {\url{https://github.com/MHCGA/halo-cms-docs}},
 }
 ```
 

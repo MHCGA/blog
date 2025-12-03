@@ -2,10 +2,10 @@
 
 [简体中文](README.md) | **English**
 
-[![Docs Build](https://img.shields.io/github/actions/workflow/status/MHCGA/blog/build_and_deploy_doc.yml?branch=main&style=flat-square)](https://github.com/MHCGA/blog/actions/workflows/build_and_deploy_doc.yml)
-[![Node CI](https://img.shields.io/github/actions/workflow/status/MHCGA/blog/nodejs_ci.yml?branch=main&label=node%20ci&style=flat-square)](https://github.com/MHCGA/blog/actions/workflows/nodejs_ci.yml)
-[![GitHub Stars](https://img.shields.io/github/stars/MHCGA/blog.svg?style=social&label=Star)](https://github.com/MHCGA/blog)
-[![GitHub Watchers](https://img.shields.io/github/watchers/MHCGA/blog.svg?style=social&label=Watch)](https://github.com/MHCGA/blog)
+[![Docs Build](https://img.shields.io/github/actions/workflow/status/MHCGA/halo-cms-docs/build_and_deploy_doc.yml?branch=main&style=flat-square)](https://github.com/MHCGA/halo-cms-docs/actions/workflows/build_and_deploy_doc.yml)
+[![Node CI](https://img.shields.io/github/actions/workflow/status/MHCGA/halo-cms-docs/nodejs_ci.yml?branch=main&label=node%20ci&style=flat-square)](https://github.com/MHCGA/halo-cms-docs/actions/workflows/nodejs_ci.yml)
+[![GitHub Stars](https://img.shields.io/github/stars/MHCGA/halo-cms-docs.svg?style=social&label=Star)](https://github.com/MHCGA/halo-cms-docs)
+[![GitHub Watchers](https://img.shields.io/github/watchers/MHCGA/halo-cms-docs.svg?style=social&label=Watch)](https://github.com/MHCGA/halo-cms-docs)
 
 ## About This Project
 
@@ -48,6 +48,6 @@ Code uses [MIT License](LICENSE); documentation follows CC BY-SA 4.0 + SATA comb
 
 ## Acknowledgements
 
-- Thanks to all [contributors](https://github.com/MHCGA/blog/graphs/contributors) for their contributions to content, scripts, and reviews.
+- Thanks to all [contributors](https://github.com/MHCGA/halo-cms-docs/graphs/contributors) for their contributions to content, scripts, and reviews.
 
 We look forward to you becoming the next contributor and helping us make the Knowledge Base even better!

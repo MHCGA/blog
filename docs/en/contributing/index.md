@@ -16,7 +16,7 @@ This page references best practices from the community and systematically introd
 
 ::: tip Quick Submission
 
-You can directly submit the original article link in an [issue](https://github.com/MHCGA/blog/issues/new), and then project volunteers will help move it into the knowledge base.
+You can directly submit the original article link in an [issue](https://github.com/MHCGA/halo-cms-docs/issues/new), and then project volunteers will help move it into the knowledge base.
 
 :::
 
@@ -25,13 +25,13 @@ You can directly submit the original article link in an [issue](https://github.c
 Before editing, please read the following materials to stay aligned with community standards:
 
 - [Project Overview and Site Guidelines](/en/about/)
-- [Repository README](https://github.com/MHCGA/blog/blob/main/README.en.md)
+- [Repository README](https://github.com/MHCGA/halo-cms-docs/blob/main/README.en.md)
 - Sections below
 
 ## Participate in Collaboration
 
 ::: warning Reminder
-Before writing, please browse the [Issues list](https://github.com/MHCGA/blog/issues) to ensure no one is already working on the same topic. If it appears free, please open a new issue to record your plan and scope for easier collaboration.
+Before writing, please browse the [Issues list](https://github.com/MHCGA/halo-cms-docs/issues) to ensure no one is already working on the same topic. If it appears free, please open a new issue to record your plan and scope for easier collaboration.
 :::
 
 ::: tip Tip
@@ -58,11 +58,11 @@ We cherish every contributor's enthusiasm and understand that everyone's experie
 
 ## Category Scope
 
-1. [Plugin Development Tips](/en/posts/plugins/) · [docs/posts/plugins/](https://github.com/MHCGA/blog/tree/main/docs/posts/plugins)
-2. [Theme Development Tips](/en/posts/themes/) · [docs/posts/themes/](https://github.com/MHCGA/blog/tree/main/docs/posts/themes)
-3. [Plugin & Theme Synergy](/en/posts/plugin-theme-synergy/) · [docs/posts/plugin-theme-synergy/](https://github.com/MHCGA/blog/tree/main/docs/posts/plugin-theme-synergy)
-4. [Usage Tips](/en/posts/usage/) · [docs/posts/usage/](https://github.com/MHCGA/blog/tree/main/docs/posts/usage)
-5. [Miscellaneous Practices](/en/posts/misc/) · [docs/posts/misc/](https://github.com/MHCGA/blog/tree/main/docs/posts/misc)
+1. [Plugin Development Tips](/en/posts/plugins/) · [docs/posts/plugins/](https://github.com/MHCGA/halo-cms-docs/tree/main/docs/posts/plugins)
+2. [Theme Development Tips](/en/posts/themes/) · [docs/posts/themes/](https://github.com/MHCGA/halo-cms-docs/tree/main/docs/posts/themes)
+3. [Plugin & Theme Synergy](/en/posts/plugin-theme-synergy/) · [docs/posts/plugin-theme-synergy/](https://github.com/MHCGA/halo-cms-docs/tree/main/docs/posts/plugin-theme-synergy)
+4. [Usage Tips](/en/posts/usage/) · [docs/posts/usage/](https://github.com/MHCGA/halo-cms-docs/tree/main/docs/posts/usage)
+5. [Miscellaneous Practices](/en/posts/misc/) · [docs/posts/misc/](https://github.com/MHCGA/halo-cms-docs/tree/main/docs/posts/misc)
 
 > New articles should be placed directly in the corresponding category directory as Markdown files: Chinese originals in `docs/posts/<category>/`, and if translating to English, create the translation in `docs/en/posts/<category>/` using the same filename.
 
@@ -113,14 +113,14 @@ While waiting for review, you can comment on other people's PRs, give thumbs up,
 
 ### Edit multiple pages
 
-1. Open [MHCGA/blog](https://github.com/MHCGA/blog), press <kbd>.</kbd> (or change `github.com` to `github.dev`) to enter the web-based VS Code.
+1. Open [MHCGA/halo-cms-docs](https://github.com/MHCGA/halo-cms-docs), press <kbd>.</kbd> (or change `github.com` to `github.dev`) to enter the web-based VS Code.
 2. Modify multiple files and use the preview button in the top-right corner (or <kbd>Ctrl</kbd> + <kbd>K</kbd>, <kbd>V</kbd>) to check rendering.
 3. After completing edits, use the **Source Control** on the left side, fill in information following the commit convention and commit. If prompted to create a branch, click the green **Fork Repository** button.
 4. After committing, a prompt box will appear at the top for you to fill in the PR title and target branch in sequence, then confirm to generate the PR.
 
 ### Append changes to a PR
 
-1. Open the [Pull Request list](https://github.com/MHCGA/blog/pulls) and enter your submitted PR.
+1. Open the [Pull Request list](https://github.com/MHCGA/halo-cms-docs/pulls) and enter your submitted PR.
 2. Below the PR title you'll see `<your GitHub ID> wants to merge ... from <your branch name>`, click the branch name to jump to your personal Fork.
 3. Continue editing based on needs:
    - Few files: edit and commit directly on GitHub.
@@ -135,8 +135,8 @@ If still unfamiliar with Git/GitHub, prefer using the web editor above. Local wo
 
 General steps:
 
-1. Fork `MHCGA/blog` to your account.
-2. Clone your fork locally: `git clone git@github.com:<you>/blog.git`.
+1. Fork `MHCGA/halo-cms-docs` to your account.
+2. Clone your fork locally: `git clone git@github.com:<you>/halo-cms-docs.git`.
 3. Create a branch and complete modifications, following the commit convention.
 4. `git push` to your fork, then create a PR on GitHub.
 5. To append changes, continue committing and pushing locally.
