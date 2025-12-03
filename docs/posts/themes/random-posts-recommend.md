@@ -192,7 +192,7 @@ spec:
     - 不会出现不能整除导致缺少的情况。
     - 最多因为查询结果中有当前文章，然后被 `th:if="${post.metadata.name != iterPost.metadata.name}"` 过滤，导致最后展示数为 `n-1`。
     - 由于内层变量无法传递到外层，所以解决 `n-1` 会使得代码比较复杂：判断如果 `post.metadata.name == iterPost.metadata.name` 成立，就多补偿一篇。补偿的时候也要进行检查，防止多补偿的一篇文章依然为当前文章。
-    - 如果这段模板代码不是放置在文章页模板，去除了 `th:if=${post.metadata.name != iterPost.metadata.name}` 则不会出现展示数为 `n-1` 的问题。
+    - 如果这段模板代码不是放置在文章页模板，去除了 `th:if="${post.metadata.name != iterPost.metadata.name}"` 则不会出现展示数为 `n-1` 的问题。
   - 如果查询结果是最后一页，也是第一页，不进入补偿检查。
     - 说明查询结果只有一页，总文章数小于 `n`，无需进行补偿
   - 如果是最后一页，而且不是第一页，就进行补偿检查。
