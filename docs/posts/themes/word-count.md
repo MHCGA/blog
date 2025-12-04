@@ -159,7 +159,7 @@ references:
 <span th:text="${#strings.length(moment.spec.content?.html)}"> 字数替换位 </span>
 ```
 
-缺点：统计的是内容的总字符数，包括 HTML 标签，不够精确（可以修订为 `#strings.length(post.content?.content)/4` 作为估计值）。
+缺点：统计的是内容的总字符数，包括 HTML 标签，不够精确（可以修订为 `#strings.length(moment.spec.content?.html)/4` 作为估计值）。
 
 ### Finder API 实现
 
