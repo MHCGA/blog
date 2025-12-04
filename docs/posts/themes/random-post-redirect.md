@@ -39,7 +39,7 @@ references:
 - `th:href="${postPermalink}"`：
   - 将这个标签的 `href` 属性设置为 `postPermalink`，即刚才取出的超链接。
 
-## 结合 Javascript 使用
+## 结合 JavaScript 使用
 
 插入以下代码到模板中，之后调用 `toRandomPost()` 即可跳转到随机文章。
 
