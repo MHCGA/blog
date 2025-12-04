@@ -22,9 +22,6 @@ references:
 ```nginx
 # 1. 匹配无扩展路径（兼容有无尾随斜杠）
 location ~ ^/(project-a|project-b|project-c)/(?:[^/]+/)*[^/.]+/?$ {
-    set $path_prefix $1;
-    set $path_suffix $2;
-
     # 2. 附加 .html
     rewrite ^/(project-a|project-b|project-c)/(.*?)/?$ /$1/$2.html break;
 
@@ -62,14 +59,6 @@ location ~ ^/(project-a|project-b|project-c)/assets/.*\.(gif|png|jpe?g|svg|webp|
 
 # 2. 无扩展路径：原始 -> .html -> /index.html
 location ~ ^/(project-a|project-b|project-c)/(?:[^/]+/)*[^/.]+/?$ {
-    if ($uri ~ \.(gif|png|jpe?g|svg|webp|avif|css|js|woff2?|ttf|eot|ico)$) {
-        break; # 避免误伤静态资源
-    }
-
-    # 使用变量保存原始路径，供后续引用
-    set $path_prefix $1;
-    set $path_suffix $2;
-
     rewrite ^/(project-a|project-b|project-c)/(.*?)/?$ /$1/$2.html break;
 
     proxy_pass http://halo-backend.internal:8080;
@@ -80,14 +69,13 @@ location ~ ^/(project-a|project-b|project-c)/(?:[^/]+/)*[^/.]+/?$ {
 
 # 处理 404 后的 /index.html 重试
 location @try_index_html {
-    # 使用内部变量保存原始请求路径
     rewrite ^/(.+)\.html$ /$1/index.html break;
 
     proxy_pass http://halo-backend.internal:8080;
 }
 
 # 3. Halo CMS 本体静态资源处理（带版本号匹配）
-location ~* \.(gif|png|jpe?g|css|js|woff2?|svg|webp|avif)((\?(v|version)=\d+\.\d+\.\d+)?$) {
+location ~* \.(gif|png|jpe?g|css|js|woff2?|svg|webp|avif)(\?(v|version)=\d+\.\d+\.\d+)?$ {
     proxy_pass http://halo-backend.internal:8080;
     expires 365d;
 }
