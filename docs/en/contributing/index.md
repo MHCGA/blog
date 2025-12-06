@@ -70,6 +70,7 @@ We cherish every contributor's enthusiasm and understand that everyone's experie
 
 ```yaml
 ---
+published: 2025-12-07T21:45:30Z
 author:
   - name: Contributor A
     link: https://github.com/contributor-a
@@ -85,6 +86,7 @@ references:
 
 Field explanation:
 
+- `published` (required): Publication time.
 - `author` (required): at least one author with `name`; both `link` and `email` are optional.
   - `link`: primary contact method (personal website, GitHub profile, etc.); prioritized if present.
   - `email`: fallback contact, only used when `link` is empty or missing. Use empty string `''` if not available.

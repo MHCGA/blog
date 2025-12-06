@@ -206,15 +206,9 @@ export default defineConfig({
         filename: "rss.xml",
         locales: {
           root: {
-            baseUrl,
-            title: "Halo CMS 知识库 | 简体中文",
-            copyright: "版权所有 © 2025-至今 MHCGA",
-            description: "Make Halo CMS Great Again · 分享与 Halo CMS 相关的插件、主题与运营经验。",
-            language: "zh-Hans",
             filename: "rss.zh-hans.xml",
           },
           en: {
-            baseUrl,
             title: "Halo CMS Knowledge Base | English",
             copyright: "Copyright © 2025-present MHCGA",
             description:
