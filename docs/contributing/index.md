@@ -69,6 +69,7 @@ Issues 中的迭代计划与 Todo 标签聚合了大量待办工作，是了解�
 
 ```yaml
 ---
+published: 2025-12-07T21:45:30Z
 author:
   - name: 投稿者 A
     link: https://github.com/contributor-a
@@ -84,6 +85,7 @@ references:
 
 字段说明：
 
+- `published`（必填）：发布时间。
 - `author`（必填）：至少填写一位作者的 `name`；`link` 和 `email` 均可选。
   - `link`：主要联系方式（个人网站、GitHub 主页等），若存在则优先使用。
   - `email`：备选联系方式，仅在 `link` 为空或缺失时使用。若无邮箱可填空字符串 `''`。
